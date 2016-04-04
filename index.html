@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Holiday Extras' Loan Repayment Calculator</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+		<div class="container">
+	      <div class="logo"><img src="img/holiday-extras-logo.png" alt="Holiday Extras"/></div>
+		  <div class="telephone"><span>Call Our Free </span>UK Helpline: <strong>0800 977 5171</strong></div>
+		</div>
+	</header>
+    <div class="container">	  
+	  <div class="calculator-amortization">
+	    <div class="col-md-8">
+		  <div class="content">
+		    <h1>Holiday Extras' Loan Repayment Calculator</h1>
+		    <img src="img/sunset.jpg" alt="Sunset"/>
+	        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+		  </div>	
+	    </div>
+		<div class="col-md-4">
+		  <div class="form">
+			<h2>Calculate Repayment:</h2>
+		  </div>
+		</div>
+	    <div class="results"></div>
+	  </div>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery.loan.js"></script>
+	<script>
+	// start loan.js
+	$(document).ready(function(){
+
+		// set up the amortization schedule calculator
+		$(".calculator-amortization").accrue({
+			mode: "amortization"
+		});
+	});
+	</script>
+  </body>
+</html>
